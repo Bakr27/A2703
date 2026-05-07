@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import { Download, Mail, FolderOpen, ChevronDown, Github, Linkedin } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
+import { downloadCV } from '../utils/downloadCV';
 
 export default function Hero() {
   const scrollTo = (id) => {
@@ -108,16 +109,13 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="flex flex-col sm:flex-row gap-4 items-center justify-center mb-16"
         >
-          <a 
-            href={personalInfo.cvUrl} 
-            download={personalInfo.cvFilename}
-            target="_self"
-            referrerPolicy="no-referrer"
+          <button
+            onClick={() => downloadCV(personalInfo.cvUrl, personalInfo.cvFilename)}
             className="btn-cyber-solid rounded-sm flex items-center gap-2"
           >
             <Download className="w-4 h-4" />
             Download CV
-          </a>
+          </button>
           <button
             onClick={() => scrollTo('#projects')}
             className="btn-cyber rounded-sm flex items-center gap-2"

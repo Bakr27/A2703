@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Mail, Github, Linkedin, MessageSquare, Send, CheckCircle, Download } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
+import { downloadCV } from '../utils/downloadCV';
 
 export default function Contact() {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -86,11 +87,8 @@ export default function Contact() {
             })}
 
             {/* CV Download */}
-            <motion.a
-              href={personalInfo.cvUrl}
-              download={personalInfo.cvFilename}
-              target="_self"
-              referrerPolicy="no-referrer"
+            <motion.button
+              onClick={() => downloadCV(personalInfo.cvUrl, personalInfo.cvFilename)}
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.7 }}
@@ -98,7 +96,7 @@ export default function Contact() {
             >
               <Download className="w-4 h-4" />
               Download My CV / Resume
-            </motion.a>
+            </motion.button>
           </motion.div>
 
           {/* Right: Contact Form */}
