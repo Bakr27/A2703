@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff" />
+      <stop offset="100%" style="stop-color:#7b2fff" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="64" height="64" fill="#0a0f1a" rx="8"/>
+  
+  <!-- Shield -->
+  <path d="M32 6 L48 14 L48 28 Q48 45 32 56 Q16 45 16 28 L16 14 Z" fill="url(#gradient1)" opacity="0.15" stroke="url(#gradient1)" stroke-width="1.5"/>
+  
+  <!-- Lock symbol inside shield -->
+  <rect x="22" y="28" width="20" height="16" rx="2" fill="none" stroke="url(#gradient1)" stroke-width="2"/>
+  <path d="M26 28 Q26 24 32 24 Q38 24 38 28" fill="none" stroke="url(#gradient1)" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Keyhole -->
+  <circle cx="32" cy="38" r="2" fill="url(#gradient1)"/>
+</svg>
