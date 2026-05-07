@@ -12,7 +12,7 @@ export const personalInfo = {
   github: "https://github.com/bakr27",        // ← Change this
   linkedin: "https://www.linkedin.com/in/a27o3/",  // ← Change this
   whatsapp: "https://wa.me/201098648378",           // ← Change this
-  cvUrl: "/Aboubakr_Ramadan_Nafady_CV.pdf",           // public file path
+  cvUrl: "/portfolio/Aboubakr_Ramadan_Nafady_CV.pdf",        // public file path
   cvFilename: "Aboubakr_Ramadan_Nafady_CV.pdf",     // used by download attribute
   // cvUrl: "/portfolio/Aboubakr_Ramadan_Nafady_CV.pdf",           // legacy path
   bio: "A highly motivated final-year Computer Science student with deep specialization in enterprise networking and cybersecurity. Passionate about designing resilient network infrastructures, securing critical systems, and developing skills across SOC operations, penetration testing, and threat intelligence. Driven to build and protect the digital backbone of tomorrow's organizations.",

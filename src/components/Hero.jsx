@@ -108,7 +108,13 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="flex flex-col sm:flex-row gap-4 items-center justify-center mb-16"
         >
-          <a href={personalInfo.cvUrl} download className="btn-cyber-solid rounded-sm flex items-center gap-2">
+          <a 
+            href={personalInfo.cvUrl} 
+            download={personalInfo.cvFilename}
+            target="_self"
+            referrerPolicy="no-referrer"
+            className="btn-cyber-solid rounded-sm flex items-center gap-2"
+          >
             <Download className="w-4 h-4" />
             Download CV
           </a>

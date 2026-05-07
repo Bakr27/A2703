@@ -18,7 +18,7 @@ export default function Contact() {
   };
 
   const socialLinks = [
-    { icon: Github, label: 'GitHub', sub: '@yourusername', href: personalInfo.github, color: '#00d4ff' },
+    { icon: Github, label: 'GitHub', sub: '@bakr27', href: personalInfo.github, color: '#00d4ff' },
     { icon: Linkedin, label: 'LinkedIn', sub: 'Connect with me', href: personalInfo.linkedin, color: '#7b2fff' },
     { icon: Mail, label: 'Email', sub: personalInfo.email, href: `mailto:${personalInfo.email}`, color: '#00ffcc' },
     { icon: MessageSquare, label: 'WhatsApp', sub: 'Message me directly', href: personalInfo.whatsapp, color: '#00ffcc' },
@@ -89,6 +89,8 @@ export default function Contact() {
             <motion.a
               href={personalInfo.cvUrl}
               download={personalInfo.cvFilename}
+              target="_self"
+              referrerPolicy="no-referrer"
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.7 }}
