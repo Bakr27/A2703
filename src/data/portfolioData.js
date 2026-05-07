@@ -8,7 +8,7 @@ export const personalInfo = {
   subtitle: "Final-Year Computer Science Student",
   location: "Cairo, Egypt",
   email: "aboubakr2703@gmail.com",     // ← Change this
-  phone: "+20 109 864 838",           // ← Change this
+  phone: "+20 109 864 8378",           // ← Change this
   github: "https://github.com/bakr27",        // ← Change this
   linkedin: "https://www.linkedin.com/in/a27o3/",  // ← Change this
   whatsapp: "https://wa.me/201098648378",           // ← Change this
