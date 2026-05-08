@@ -2,7 +2,7 @@ export function downloadCV(cvUrl, cvFilename) {
   try {
     if (!cvUrl) return;
 
-    const filename = cvFilename || cvUrl.split('/').pop() || 'CV.pdf';
+    const filename = cvFilename || cvUrl.split('/').pop() || 'Aboubakr_Ramadan_Nafady_CV.pdf';
 
     // If the file already supports direct download (static file in public/),
     // we can use a simple anchor download.
