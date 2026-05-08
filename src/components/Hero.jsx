@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import { Download, Mail, FolderOpen, ChevronDown, Github, Linkedin } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
-import { downloadCV } from '../utils/downloadCV';
 
 export default function Hero() {
   const scrollTo = (id) => {

@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Mail, Github, Linkedin, MessageSquare, Send, CheckCircle, Download } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
-import { downloadCV } from '../utils/downloadCV';
 
 export default function Contact() {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
